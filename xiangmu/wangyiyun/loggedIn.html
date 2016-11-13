@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="images/music.ico"/>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/loggedIn.css"/>
+
+    <script src="js/mymusic.js" style="text/javascript"></script>
+    <title>网易云音乐 听见好时光</title>
+</head>
+<body>
+<!-- 导航栏-->
+<nav>
+    <div class="c">
+        <h1>
+            <a hidefocus="true" href="http://localhost:63342/%E5%9F%B9%E8%AE%AD%E5%86%85%E5%AE%B9/10.4~7%E9%A1%B9%E7%9B%AE/wangyiyun/index.html" >网易云音乐</a>
+        </h1>
+        <div>
+            <ul>
+                <li class="discover bg ">
+                    <a href="http://localhost:63342/%E5%9F%B9%E8%AE%AD%E5%86%85%E5%AE%B9/10.4~7%E9%A1%B9%E7%9B%AE/wangyiyun/index.html">发现音乐</a>
+                    <em class="r_tri"></em>
+                </li>
+                <li class="discover bg faul">
+                    <a href="#">我的音乐</a>
+                    <em class="r_tri"></em>
+                </li>
+                <li class="friend bg">
+                    <a href="#">朋友</a>
+                    <em class="r_tri"></em>
+                </li>
+                <li class="load bg">
+                    <a href="#">下载客户端 <em>&nbsp;</em></a>
+                    <em class="r_tri"></em>
+                </li>
+            </ul>
+        </div>
+        <div class="search">
+            <input type="text" placeholder="单曲/歌手/专辑/歌单/MV/用户"/>
+        </div>
+        <div class="email">
+            <a href="#"></a>
+        </div>
+        <!-- 头像-->
+        <div class="info">
+            <div class="mask">
+                <a href="#"></a>
+            </div>
+
+            <div class="nickname">
+                <a href="#">Fun!</a>
+                <em id="tri"></em>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="navshadow"></div>
+    </div>
+</nav>
+<!--导航栏结束-->
+
+<div class="contain">
+    <div class="c">
+        <div class="mymusic">
+            <!--左边歌单-->
+            <div class="orderName">
+                <div class="new">
+                    <a href="#"><em></em>新建</a>
+                </div>
+                <h3 id="create"><em id="cre"></em>创建的歌单(2)</h3>
+                <ul id="cre_menu">
+                    <li><div><em></em>我喜欢的音乐</div></li>
+                    <li><div><em></em>英文歌曲</div></li>
+                </ul>
+                <h3 id="collect"><em></em>收藏的歌单(1)</h3>
+                <ul id="col_menu">
+                    <li>1</li>
+                </ul>
+            </div>
+            <!-- 歌单主要内容-->
+            <div class="main"  id="toper" >
+                <div class="r-mss">
+                    <div class="m-info">
+                        <img src="./images/myinfo.jpg" alt=""/>
+                    </div>
+                    <div class="cnt">
+                        <em class="music"></em>
+                        <h2>我喜欢的音乐</h2>
+                        <div ><img src="./images/face.jpg" alt=""/><a id="btn" href="#">Fun!</a><span>2016-10-07 创建</span></div>
+                        <ul>
+                            <li><a href=""><i></i>播放</a></li>
+                            <li></li>
+                            <li><i>收藏</i></li>
+                            <li><i>分享</i></li>
+                            <li><i>下载</i></li>
+                            <li><i>评论</i></li>
+                        </ul>
+                    </div>
+                    <div class="r-bar">
+                        <h3>歌曲列表</h3>
+                        <span class="sum"><em id="">11</em>首歌</span>
+                        <span class="times">播放: <em id="times">2</em>次</span>
+                    </div>
+                    <!-- 歌曲信息-->
+                    <div class="r-order" onscroll="backup()">
+                        <table class="songs">
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th><div>歌曲标题</div></th>
+                                    <th><div>时长</div></th>
+                                    <th><div>歌手</div></th>
+                                    <th><div>专辑</div></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!--<tr></tr>
+                                <tr></tr>
+                                <tr></tr>
+                                <tr></tr>
+                                <tr></tr>-->
+                            </tbody>
+                        </table>
+                        <img src="./images/songs.PNG" alt=""/>
+                    </div>
+                    <!-- 评论区域-->
+                    <div class="com">
+                        <div class="header">
+                            <h3>评论</h3>
+                            <span class="total">共<em >0</em>条评论</span>
+                        </div>
+                        <div class="con">
+                            <span><img src="./images/head.jpg" alt=""/></span>
+                            <textarea placeholder="评论"></textarea>
+                            <div>
+                                <span class="face"></span>
+                                <span class="add"></span>
+                                <a href="#">评论</a>
+                                <span class="num">140</span>
+                            </div>
+                            <div class="arr">
+                                <span>◇</span>
+                                <i></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="back" ><a id="backup" href="#toper" title="回到顶部">Top</a></div>
+    </div>
+</div>
+<script>
+
+</script>
+</body>
+</html>
